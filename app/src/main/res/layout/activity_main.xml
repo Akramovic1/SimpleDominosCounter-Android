@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="806dp"
+        android:layout_height="1134dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/pexels_photo_4102597" />
+
+    <LinearLayout
+        android:layout_width="249dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="187dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.96">
+
+        <Button
+            android:id="@+id/undoP1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="undoPointPlayer1"
+            android:text="Undo P1" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="resetScore"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/undoP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="undoPointPlayer2"
+            android:text="Undo P2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="113dp"
+        android:layout_height="552dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button1_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add10ForPlayer1"
+            android:text="10" />
+
+        <Button
+            android:id="@+id/button1_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add20ForPlayer1"
+            android:text="20" />
+
+        <Button
+            android:id="@+id/button1_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add30ForPlayer1"
+            android:text="30" />
+
+        <Button
+            android:id="@+id/button1_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add40ForPlayer1"
+            android:text="40" />
+
+        <Button
+            android:id="@+id/button1_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add50ForPlayer1"
+            android:text="50" />
+
+        <Button
+            android:id="@+id/button1_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add60ForPlayer1"
+            android:text="60" />
+
+        <Button
+            android:id="@+id/button1_70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add70ForPlayer1"
+            android:text="70" />
+
+        <Button
+            android:id="@+id/button1_80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add80ForPlayer1"
+            android:text="80" />
+
+        <Button
+            android:id="@+id/button1_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add90ForPlayer1"
+            android:text="90" />
+
+        <Button
+            android:id="@+id/button1_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add100ForPlayer1"
+            android:text="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="116dp"
+        android:layout_height="558dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13">
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="#000000	"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button2_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add10ForPlayer2"
+            android:text="10" />
+
+        <Button
+            android:id="@+id/button2_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add20ForPlayer2"
+            android:text="20" />
+
+        <Button
+            android:id="@+id/button2_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add30ForPlayer2"
+            android:text="30" />
+
+        <Button
+            android:id="@+id/button2_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add40ForPlayer2"
+            android:text="40" />
+
+        <Button
+            android:id="@+id/button2_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add50ForPlayer2"
+            android:text="50" />
+
+        <Button
+            android:id="@+id/button2_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add60ForPlayer2"
+            android:text="60" />
+
+        <Button
+            android:id="@+id/button2_70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add70ForPlayer2"
+            android:text="70" />
+
+        <Button
+            android:id="@+id/button2_80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add80ForPlayer2"
+            android:text="80" />
+
+        <Button
+            android:id="@+id/button2_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add90ForPlayer2"
+            android:text="90" />
+
+        <Button
+            android:id="@+id/button2_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="add100ForPlayer2"
+            android:text="100" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/player1_score"
+        android:layout_width="94dp"
+        android:layout_height="221dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player2_score"
+        android:layout_width="98dp"
+        android:layout_height="218dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
